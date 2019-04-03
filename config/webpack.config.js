@@ -3,7 +3,7 @@
  * @LastEditors: btbrad
  * @Description: 
  * @Date: 2019-04-04 00:24:02
- * @LastEditTime: 2019-04-04 00:26:52
+ * @LastEditTime: 2019-04-04 01:31:40
  */
 
 
@@ -352,8 +352,7 @@ module.exports = function(webpackEnv) {
                         },
                       },
                     },
-                  ],
-                  ["import", { libraryName: "antd-mobile", style: "css" }] // `style: true` 会加载 less 文件
+                  ]
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/

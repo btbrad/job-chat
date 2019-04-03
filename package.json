@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.2.2",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
     "@svgr/webpack": "4.1.0",
     "antd-mobile": "^2.2.11",
     "axios": "^0.18.0",
@@ -125,7 +126,15 @@
     "presets": [
       "react-app"
     ],
-    "plugins": ["transform-decorators-legacy"]
+    "plugins": [
+      ["import", { "libraryName": "antd-mobile", "style": "css" }], 
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "decoratorsBeforeExport":true
+        }
+      ]
+    ]
   },
   "proxy": "http://localhost:9003"
 }
